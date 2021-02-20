@@ -1,0 +1,239 @@
+@font-face{
+  font-family: Soularic;
+  src: url('../assets/type/Soularic.ttf');
+}
+
+@font-face{
+  font-family: Jura;
+  src: url('../assets/type/Jura-Light.ttf');
+}
+
+@font-face{
+  font-family: "Rockwell";
+  src: url('../assets/type/rockwen.ttf');
+}
+
+@keyframes slide-in-bck-center {
+  0% {
+    -webkit-transform: translateZ(600px);
+            transform: translateZ(600px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scanAnim {
+	0% {
+		background-position: 0px 0px;
+	}
+	100% {
+		background-position: 0px 8px;
+	}
+}
+
+body{
+    background-color: black;
+    background-image: url(../assets/images/backgrounds/background.png);
+    background-size: auto;
+    overflow: hidden;
+}
+
+#triangles{
+    opacity: 0.77;
+}
+
+svg path {
+    fill: url(#header-shape-gradient) #fff;
+  }
+  
+  #header-shape-gradient {
+    --color-1: #d196ff;
+    --color-2: #9649ff;
+    --color-3: #5e19c4;
+  }
+
+[id^="tri-"] > svg{
+width: 35%;
+position: absolute;
+animation: rotating 18s linear infinite;
+}
+
+.content{
+  perspective: 1000px;
+  position: absolute;
+  width: -webkit-fill-available;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main{
+  transform: translateZ(0px);
+  display: flex;
+  border-top: solid 2px white;
+  border-bottom: solid 2px white;
+  background: linear-gradient(0deg, transparent 2%, #1053a630 2%, #ec59ff26 98%, transparent 2%);
+  height: 50vh;
+  width: auto;
+}
+
+.profilepic{
+  width: 13em;
+  height: 13em;
+  border-radius: 100%;
+  border: solid 4px white;
+  align-self: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  background-image: url(../assets/images/icons/pfp.png);
+  background-size: contain;
+}
+
+.animationmain{
+  animation: slide-in-bck-center 0.7s;
+}
+
+.animationmainrev{
+  animation: slide-in-bck-center 0.7s reverse;
+}
+
+.profilepic > p{
+  color: white;
+  display: flex;
+  font-family: Rockwell;
+  font-size: 1.8em;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  align-self: flex-end;
+  box-shadow: 0px 0px 16px 4px #060606bd;
+  width: 77%;
+  height: 20%;
+  background-color: #000000d9;
+}
+
+form{
+    display: inline;
+    height: 9%;
+    width: 22%;
+    align-self: center;
+}
+
+.cons{
+  font-family: Jura;
+  font-size: 0.9em;
+  color: white;
+  text-align: left;
+  margin-top: 2%;
+  margin-left: 0.3%;
+}
+
+input{
+  outline: none;
+}
+
+input[type="password"]{
+  transition: all 0.3s ease-out;
+  padding-left: 6%;
+  width: 62%;
+  color: white;
+  font-size: 1.8em;
+  font-family: Jura;
+  font-weight: 300;
+  border: solid 1px rgba(255, 255, 255, 0.671);
+  border-radius: 0.3em;
+  background: rgb(122,122,122);
+  background: linear-gradient(180deg, rgba(122, 122, 122, 0.13) 0%, rgba(255, 255, 255, 0.13) 100%);
+}
+
+input[type="password"]:focus{
+  border: solid 2px white;
+}
+
+input[type="password"]::placeholder{
+  color: white;
+  opacity: 0.11;
+  position: relative;
+  bottom: 6%;
+}
+
+input[type="submit"]{
+  position: absolute;
+  border: solid 2px white;
+  border-radius: 100%;
+  height: 2.3em;
+  width: 2.3em;
+  margin-left: 2%;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  background: rgb(246,33,153);
+  background: linear-gradient(0deg, rgba(246, 33, 154, 0.349) 0%, rgba(84, 6, 33, 0.349) 75%, rgba(38, 8, 31, 0.349) 100%);
+}
+
+#time{
+  font-family: Soularic;
+  font-size: 12em;
+}
+
+.time{
+  text-align: center;
+  font-family: Soularic;
+  color: white;
+  width: 45%;
+  align-self: center;
+}
+
+#hour{
+  display: inline;
+  font-size: 12em;
+}
+
+#amorpm{
+  display: inline;
+  font-size: 4em;
+}
+
+.borderbar{
+  border: solid 2px white;
+  height: 65%;
+  align-self: center;
+  width: 0%;
+}
+
+.topbar{
+  border-top: solid 2px purple;
+  border-bottom: solid 2px purple;
+  margin-top: 1%;
+  height: 2.5vh;
+  width: auto;
+  margin-bottom: 1%;
+}
+
+.portfolio{
+  width: 100%;
+  position: absolute;
+  top: 75%;
+  left: 82%;
+  animation: slide-in-bck-center 0.7s;
+}
+
+#scanlines {
+  background-image: url(../assets/images/backgrounds/scanlines.png);
+  background-repeat: repeat;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  animation: scanAnim 0.7s infinite;
+  animation-timing-function: linear;
+  pointer-events: none;
+}
