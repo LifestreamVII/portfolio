@@ -10,4 +10,6 @@
 
 ---
 <br>
+At the moment, only the fake login/lock screen is uploaded.
+
 Work in progress...
