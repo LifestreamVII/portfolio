@@ -10,6 +10,5 @@
 
 ---
 <br>
-At the moment, only the fake login/lock screen is uploaded.
-
-Work in progress...
+Update September 20 2021 : all files are now uploaded.
+Most part of the content has been roughly translated/replaced/deleted for privacy reasons. The code itself (CSS/Js) stays untouched.
