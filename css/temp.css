@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+body{
+background-image: url("../assets/images/backgrounds/glitch.gif");
+margin: 0;
+}
+
+.upperbar{
+  width: 100%;
+  position: sticky;
+  top: 0;
+  height: 5%;
+  background-image: url(../assets/images/backgrounds/bar.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 99;
+}
+
+.clsbtn{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  float: right;
+  right: 20px;
+  position: absolute;
+}
+
+.clsbtn > img{
+  width: 24px;
+}
+
+.boxpic
+{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+
+img.shw1
+{  
+    position: relative;
+    display: none;
+    margin: 0 auto;
+    max-width: 900px;
+    max-height: 700px;
+}
+
+.shw1 p
+{
+display: none;
+text-align: center;
+font-size: 1em;
+line-height: 1.5;
+font-family: 'Comfortaa', sans-serif;
+font-weight: 300;
+color: #eee;
+}
+
+.header
+{
+    height: 351px;
+    padding-top: 170px;
+    text-align: left;
+    width: 100%;
+    overflow: visible;
+    box-shadow: 2px 1px 16px 2px #0000008c;
+}
+
+.header h1, .header a
+{
+    padding-top: 20px;
+    text-shadow: 2px 2px rgb(20, 20, 20);
+    animation: txtani 2s ease;
+    font-weight: 300;
+    font-family: "Comfortaa", sans-serif;
+    max-width: 620px;
+    font-size: 23px;
+    padding-left: 30px;
+    color: white;
+}
+
+#hdrbg
+{
+    position: absolute;
+    top: 0;
+    height: 560px;
+    opacity: 0.6;
+    object-fit: cover;
+    width: 100%;
+    z-index: -1;
+}
+
+.illuspic{
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    width: 25%;
+}
+
+.illuspic:hover{
+  transform: scale(1.16);
+}
+
+.bgcontainer{
+    background-image: url(../assets/images/backgrounds/wdow.png);
+    background-size: auto;
+    height: auto;
+    display: flex;
+}
+
+.descgrp {
+    width: 85%;
+    height: 100%;
+    margin-bottom: 30px;
+    padding-top: 7%;
+    margin: 0 auto;
+    padding-bottom: 5%;
+    font-weight: 300;
+    position: relative;
+    font-family: "Comfortaa", sans-serif;
+    color: white;
+    text-align: center;
+  }
+
+.descgrp img{
+    border-radius: 1em;
+    box-shadow: 0px 0px 13px 1px #f9f9f9cf;
+    width: 70%;
+    margin: 0 auto;
+    /* margin-top: 10%; */
+}
+
+  .left-desc {
+    float: left;
+    height: 100%;
+    width: 50%;
+    /* position: absolute;
+    display: flex;
+    align-items: center;
+    top: 50%;
+    transform: translateY(-50%); */
+  }
+
+  .right-desc {
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 50%;
+    /* position: absolute; */
+    /* display: flex; */
+    float: right;
+  }
+
+  .left-desc-content {
+    width: 100%;
+    max-width: 70%;
+    max-height: 40%;
+    float: left;
+  }
+  
+  .right-desc-content {
+    max-width: 70%;
+    float: right;
+    height: 100%;
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  
+  
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1281px) and (max-width: 1366px) {
+  
+  .textcont{
+    font-size: 1.18em;
+    width: 700px;
+  }
+  
+
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  /* CSS */
+  
+}

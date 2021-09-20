@@ -1,0 +1,12 @@
+.window{
+    transition: all 0.6s linear;
+    position: fixed;
+    width: 80%;
+    height: 80%;
+    border: solid 2px #ad5fad;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("../assets/images/backgrounds/glitch.gif");
+    overflow: overlay;
+}
