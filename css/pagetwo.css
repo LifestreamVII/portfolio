@@ -54,7 +54,7 @@ animation: rotating 18s linear infinite;
 .content{
   perspective: 1000px;
   position: absolute;
-  width: -webkit-fill-available;
+  width: 100%;
   left: 50%;
   transform: translate(-50%, 0%);
 }
